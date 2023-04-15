@@ -1,11 +1,12 @@
-<h1>Shit is working</h1>
+<h1>Max-Lindberg updates</h1>
 
 <% @blog_posts.each do |blog_post| %>
   <div>
     <h2><%= link_to blog_post.title, blog_post %></h2>
+    <% if blog_post.draft? %>
+      <div> class="p-2 rounded bg-gray-150 text-gray-950"</div>
+    <% end %> 
     <%= blog_post.body %><br/>
-
-    
       <%= link_to "Rediger", edit_blog_post_path(blog_post) if user_signed_in? %>
     
   </div>
