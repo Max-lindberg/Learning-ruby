@@ -5,20 +5,20 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation: There is used postgresql.
 
-* Database initialization
+* Database initialization: Install postgresql and make a database.
 
-* How to run the test suite
+* How to run the test site: Do it localy.
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment instructions: Define RAILS_MASTER_KEY + DATABASE_URL
 
-* ...
+* Fix errors if you get some of that(:
